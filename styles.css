@@ -1,0 +1,39 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    
+}
+
+.cell {
+    border: solid 2px black;
+    height: 100px;
+    width: 100px;
+
+}
+
+.icon-radio-unchecked {
+    fill: black;
+width: 90px;
+height: 90px;
+border: 1px black solid;
+}
+
+#restart-btn {
+    
+    padding: 25px;
+    margin-top: 50px;
+    font-family:"Gabarito";
+    font-size: 30px;
+  
+    /* color: lightgreen;
+    background-color: darkolivegreen; */
+}
+
+
