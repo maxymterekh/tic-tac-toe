@@ -1,34 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Гра "Хрестики-нолики"</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600&family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    
-    <title>Tic tac toe </title>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@600&family=Montserrat:ital,wght@0,500;0,600;1,500;1,600&family=Roboto:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <div class="game-container">
-    <div class="cell-container">
-        <div class="cell" id="cell"></div>
-        <div class="cell" id="cell"></div>
-        <div class="cell" id="cell"></div>
-        <div class="cell" id="cell"></div>
-        <div class="cell" id="cell"></div>
-        <div class="cell" id="cell"></div>
-        <div class="cell" id="cell"></div>
-        <div class="cell" id="cell"></div>
-        <div class="cell" id="cell"></div>
-        <svg class="icon icon-radio-unchecked"><use xlink:href="#icon-radio-unchecked"></use></svg>
-        <svg class="icon icon-cross"><use xlink:href="#icon-cross"></use></svg>
-    </div>
-    <button type="button" id="restart-btn">Restart</button>
-</div>
+  <div id="board" class="board">
+    <div class="cell" onclick="makeMove(0)"></div>
+    <div class="cell" onclick="makeMove(1)"></div>
+    <div class="cell" onclick="makeMove(2)"></div>
+    <div class="cell" onclick="makeMove(3)"></div>
+    <div class="cell" onclick="makeMove(4)"></div>
+    <div class="cell" onclick="makeMove(5)"></div>
+    <div class="cell" onclick="makeMove(6)"></div>
+    <div class="cell" onclick="makeMove(7)"></div>
+    <div class="cell" onclick="makeMove(8)"></div>
+  </div>
 
-<script type="module" src="script.js"></script>
+  <div class="score-table">
+    <h2 class="score-title">Таблиця переможців</h2>
+    <table>
+      <tr>
+        <th>Гравець X</th>
+        <td id="score-x">0</td>
+      </tr>
+      <tr>
+        <th>Гравець O</th>
+        <td id="score-o">0</td>
+      </tr>
+      <tr>
+        <th>Нічия</th>
+        <td id="score-draw">0</td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
+
